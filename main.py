@@ -33,7 +33,7 @@ for i in range(0, numOfRowsOnZoomed):
                 verticalColor1 = im[rowOnOriginal, colOnOriginal]
                 verticalColor2 = -1
             else:
-                if j == colIndex: #if the pixel we are processing is on a major column. we don't need 2 vertical color values
+                if j == colIndex: #if the pixel we are processing is on a major column. we don't need 2 horizontal colors which calculated vertically
                     color1 = im[rowOnOriginal, colOnOriginal]
                     color3 = im[rowOnOriginal + 1, colOnOriginal]
                     verticalDif1 = i - rowOnOriginal * scale
